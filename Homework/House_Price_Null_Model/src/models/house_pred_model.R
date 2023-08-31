@@ -1,8 +1,8 @@
 library(dplyr)
 
-train <- read.csv("/Users/artemmiyy/Documents/GitHub/Stat380_Kaggle/House_Price_Null_Model/volume/data/processed/training_house_data.csv")
+train <- read.csv("./Stat380/Homework/House_Price_Null_Model/volume/data/processed/training_house_data.csv")
 
-test <- read.csv("/Users/artemmiyy/Documents/GitHub/Stat380_Kaggle/House_Price_Null_Model/volume/data/processed/testing_house_data.csv")
+test <- read.csv("./Stat380/Homework/House_Price_Null_Model/volume/data/processed/testing_house_data.csv")
 
 test$num_id <- NA
 
