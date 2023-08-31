@@ -11,7 +11,7 @@ library(data.table)
 # first major difference is how data is read into R
 system.time(DF<-read.csv("./Data/2008.csv"))
 system.time(DT<-fread("./Data/2008.csv"))
-AP<-fread("./Data/airports.csv")
+AP<-fread("./Data/2008.csv")
 
 # notice the last line of the str for the DF and the DT
 str(DF)
@@ -35,6 +35,7 @@ str(DT)
 system.time(Univ_Park_AP <- DT[Origin == "SCE"])
 
 # count things
+# nothing before comma means all rows in DT
 DT[,.N,by=Origin]
 
 # aggrigate over a group
